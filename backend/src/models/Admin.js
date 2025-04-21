@@ -1,4 +1,4 @@
-import { Schema, model } from 'mysql2ose';
+import { Schema, model } from 'mongoose';
 import { v4 as uuid } from 'uuid';
 
 

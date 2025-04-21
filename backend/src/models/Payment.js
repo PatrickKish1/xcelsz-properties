@@ -1,4 +1,4 @@
-import { Schema, model } from 'mysql2ose';
+import { Schema, model } from 'mongoose';
 
 const paymentSchema = new Schema({
     bookingId: { type: Schema.Types.ObjectId, ref: 'Booking', required: true },

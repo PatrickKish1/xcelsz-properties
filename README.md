@@ -1,70 +1,125 @@
-# Getting Started with Create React App
+# Property Listing Application - myrentfindr
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based property listing application that allows users to browse and book rental properties.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Responsive landing page showcasing the benefits of the platform
+- Property listing page with search and filtering options
+- Filter properties by location (country, city, region) and property type
+- Search properties by name or location
+- Detailed property cards with key information
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React.js
+- Material UI (MUI) Components
+- Tailwind CSS for styling
+- React Router for navigation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Setup and Installation
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (v14 or later)
+- npm or yarn
 
-### `npm run build`
+### Installation Steps
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```
+   git clone https://github.com/yourusername/property-listing-app.git
+   cd property-listing-app
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Install dependencies
 
-### `npm run eject`
+   ```
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   or
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```
+   yarn install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Start the development server
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```
+   npm start
+   ```
 
-## Learn More
+   or
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```
+   yarn start
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. Open your browser and navigate to `http://localhost:3000`
 
-### Code Splitting
+## Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+src/
+├── components/      # Reusable UI components
+├── pages/           # Page components
+├── lib/             # Utilities and dummy data
+├── assets/          # Static assets like images
+├── App.jsx          # Main App component with routes
+└── index.js         # Entry point
+```
 
-### Analyzing the Bundle Size
+## Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Tailwind CSS
 
-### Making a Progressive Web App
+The project uses Tailwind CSS for styling. The configuration is in `tailwind.config.js`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Material UI Theme
 
-### Advanced Configuration
+The Material UI theme is customized in `src/App.jsx` to match the brand colors and typography.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Deployment
 
-### Deployment
+### Build for Production
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```
+npm run build
+```
 
-### `npm run build` fails to minify
+or
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+yarn build
+```
+
+### Deploy to Vercel
+
+1. Install Vercel CLI:
+
+   ```
+   npm install -g vercel
+   ```
+
+2. Deploy:
+   ```
+   vercel
+   ```
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## Contact
+
+Project Link: [https://github.com/yourusername/property-listing-app](https://github.com/yourusername/property-listing-app)

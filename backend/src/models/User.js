@@ -1,4 +1,4 @@
-import { Schema, model } from 'mysql2ose';
+import { Schema, model } from 'mongoose';
 
 const userSchema = new Schema({
     firstName: { type: String, required: true },

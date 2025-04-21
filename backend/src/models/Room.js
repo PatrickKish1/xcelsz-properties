@@ -1,4 +1,4 @@
-import { Schema, model } from 'mysql2ose';
+import { Schema, model } from 'mongoose';
 
 const roomSchema = new Schema({
     roomId: { type: String, required: true },

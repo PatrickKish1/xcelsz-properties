@@ -1,11 +1,11 @@
-import { connect } from 'mysql2';
+import { connect } from 'mongoose';
 
 const connectDB = async () => {
     try {
-        await connect(process.env.MYSQL_HOST);
-        console.log('mysql connected successfully');
+        await connect(process.env.MONGODB_URI);
+        console.log('MongoDB connected successfully');
     } catch (error) {
-        console.error('mysql connection error:', error);
+        console.error('MongoDB connection error:', error);
         process.exit(1);
     }
 };
